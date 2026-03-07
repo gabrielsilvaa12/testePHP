@@ -36,7 +36,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body { background-color: #f8f9fa; }
+        /* A MÁGICA DO FUNDO ACONTECE AQUI */
+        body { 
+            /* Cor de fundo caso a imagem demore a carregar */
+            background-color: #1a1a1a; 
+            
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../Frontend/imagens/vettel.jpg');
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        
+        /* Ajustes do Card e Botão */
+        .card { background-color: rgba(255, 255, 255, 0.95); } /* Card levemente transparente */
         .bg-grid-red { background-color: #cc0000; }
         .btn-grid-red { background-color: #cc0000; color: white; border: none; }
         .btn-grid-red:hover { background-color: #990000; color: white; }
