@@ -27,4 +27,4 @@ Projeto desenvolvido como teste técnico para vaga de estágio.
 
 ## Autor
 
-Gabriel Silva
+Gabriel Aparecido
