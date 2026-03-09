@@ -51,9 +51,11 @@ CREATE TABLE usuarios (
 
 ### 3. Clonando e Executando
 1. Clone este repositório dentro da pasta pública do seu servidor local (ex: `htdocs` no XAMPP).
-2. Verifique o arquivo `backend/conexao.php` e ajuste a variável `$senha` caso o seu MySQL local possua senha (o padrão é vazio `''` no XAMPP).
+2. Verifique o arquivo `backend/conexao.php` e ajuste as configurações de banco:
+   - **Porta:** O projeto está utilizando a porta **3307** para o MySQL. Se o seu ambiente usa o padrão (`3306`), altere esse valor no arquivo.
+   - **Senha:** Ajuste a variável `$senha` caso o seu MySQL local possua senha (o padrão é vazio `''` no XAMPP).
 3. Abra o seu navegador e acesse:
-   `http://localhost/nome-da-sua-pasta/Frontend/index.html`
+   `http://localhost/testePHP/Frontend/index.html`
 
 ---
 
@@ -63,7 +65,7 @@ A arquitetura foi dividida logicamente para separar a camada de apresentação d
 ```text
 📦 grid-start-shop
  ┣ 📂 Frontend
- ┃ ┣ 📂 imagens       # Assets, logos e backgrounds (Senna, F1 cars)
+ ┃ ┣ 📂 imagens       # Assets, logos e backgrounds
  ┃ ┗ 📜 index.html    # Vitrine principal e landing page
  ┗ 📂 Backend
    ┣ 📜 conexao.php   # Ponte de comunicação com o MySQL
